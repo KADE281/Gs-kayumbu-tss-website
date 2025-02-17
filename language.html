@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection</title>
+</head>
+<body>
+    <label for="language">Choose a language:</label>
+    <select id="language" onchange="changeLanguage()">
+        <option value="en">English</option>
+        <option value="fr">Français (French)</option>
+        <option value="rw">Kinyarwanda</option>
+        <option value="es">Español (Spanish)</option>
+        <option value="zh">中文 (Chinese)</option>
+        <option value="ar">العربية (Arabic)</option>
+    </select>
+
+    <p id="text">Hello, World!</p>
+
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("language").value;
+            var text = document.getElementById("text");
+
+            var translations = {
+                "en": "Hello, World!",
+                "fr": "Bonjour, le monde !",
+                "rw": "Muraho, isi!",
+                "es": "¡Hola, Mundo!",
+                "zh": "你好，世界！",
+                "ar": "مرحبا بالعالم!"
+            };
+
+            text.innerText = translations[lang];
+        }
+    </script>
+</body>
+</html>
+
+</html>
