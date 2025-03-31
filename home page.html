@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY SCHOOL'S WEBSITES</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    
+        body {
+            padding: 0;
+            font-size: 16px;
+            max-width: 100%;
+            margin: 0;
+                
+        }
+        header{
+            background-color: rgb(4, 75, 4);
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            text-align: canter;
+            
+        }
+        p{
+            text-align: center;
+        }
+
+        .navbar {
+            position:fixed;
+            top: 50px;
+            left:0;
+            right:0;
+            height: 50px;
+            background-color: green;
+            padding: 15px;
+            width: 100%;
+        }
+        .navbar ul {
+            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            color: white;
+            padding: 10px;
+            position: relative;
+        }
+        .navbar ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: green;
+            list-style-type: none;
+            padding: 10px 0;
+            width: 200px;
+        }
+        .navbar ul ul li {
+            padding: 10px;
+            color: white;
+        }
+        .navbar ul ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .navbar li:hover > ul {
+            display: block;
+            background-color:rgb(128, 117, 0);
+            width: auto;
+        }
+        .navbar .list ul a:hover{
+            background-color: rgb(230, 20, 27);
+            width: auto;
+        }
+        main{
+            margin-top: 150px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 170px;
+            justify-content: center;
+            }
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+            }
+        .card-container .card:hover{
+            transform: scale(1.008);
+        }
+
+         .card{
+              width: 335px;
+              background-color: antiquewhite;
+              border-radius: 8px;
+              overflow: hidden;
+              box-shadow:0px 2px 4px rgba(0,0,0,0.2);
+              margin: 20px;
+
+         }   
+        .card img{
+              width: 100%;
+              height: auto;
+         }
+         .card-content{
+            padding: px;
+         }
+         .card-content h1{
+            font-size: 30px;
+            margin-bottom: 8px;
+         } 
+         .card-content p{
+            color: blue;
+            font-size: 18px;
+            line-height: 1.3;
+        
+         }
+         .btn{
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: darkgray;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+    
+         }
+         .footer{
+            background-color: rgb(43, 214, 8);
+            bottom: 0;
+            border-radius: 8px;
+         }
+         .footer h1{
+            color: blue;
+            font-family:  Arial, sans-serif;
+            font-size: large;
+            margin-left: 15px;
+        
+         }
+         .footer p1, h1{
+            font-family:  Arial, sans-serif;
+            justify-content: center;
+         }
+         .footer .social-media a{
+            padding: 9px;
+            text-decoration: none;
+            font-size: 45px;
+            float: left;
+         }
+         .footer .social-media a:hover{
+             transform: scale(1.08);
+            }
+
+         .fa-youtube{
+            color: rgba(255, 0, 0, 0.947);
+          }
+         .fa-instagram{
+            color: rgb(183, 74, 74);
+            
+         }
+         .fa-square-x-twitter{
+        
+            color: black;
+            margin-top: 0;
+            border-radius: 4px;
+            height: 4px;
+
+         }
+         .fa-brands fa-square-facebook
+         {
+        color: white;
+        }
+
+         .fa-square-whatsapp
+         {
+            color: green;
+         }
+        .navbar .fa-bars{
+            display: none;
+         }
+         @media screen and (max-width: 768px){
+
+            .navbar .fa-bars{
+                display: block;
+                font-size: large;
+            }
+
+            .navbar .list {
+                display: none;
+            }}
+        
+                
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Welcome to MY SCHOOL'S WEBSITES This the place of the school's logo</p>
+    </header>
+    <nav class="navbar"  >
+        <ul class="list">
+            <li class="leader">Leader
+                <ul>
+                    <li><a href="#">Headmaster</a></li>
+                    <li><a href="#">DOS</a></li>
+                    <li><a href="#">Accountant</a></li>
+                    <li><a href="#">Teachers</a></li>
+                </ul>
+            </li>
+            <li class="about">About us
+                <ul class="dropdown">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Mission & Visions</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">Staff</a></li>
+                </ul>
+            </li>
+            <li class="admission">Admissions
+                <ul>
+                    <li><a href="#">Application process</a></li>
+                    <li><a href="#">Requirements</a></li>
+                    <li><a href="#">Tuition & fees</a></li>
+                </ul>
+            </li>
+
+            <li class="academic">Academics
+                <ul>
+                    <li><a href="#">Department</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                </ul>
+            </li>
+            <li class="student-portal">Student portal
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Requests & Idea box</a></li>
+                    <li><a href="#">Grades</a></li>
+                    <li><a href="#">Timetable</a></li>
+                </ul>
+            </li>
+            <li class="parent-portal">Parent portal
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Request & Ideas box</a></li>
+                </ul>
+            </li>
+            <li class="meeting-portal">Meeting portal
+                <ul>
+                    <li><a href="#">Leaders Vs Students</a></li>
+                    <li><a href="#">Leaders Vs Parents</a></li>
+                    <li><a href="#">Ideas box</a></li>
+                    <li><a href="#">Request</a></li>
+                    
+                </ul>
+            </li>  
+            <li class="news-events">News And Events
+                <ul>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Upcoming & Events</a></li>
+                </ul>
+            </li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+
+
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+                <div class="card-content">
+                    <h1>video</h1>
+                    <p>This is the first video</p>
+                    <a href="#" class="btn">Explore more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+                <div class="card-content">
+                    <h1>video 2</h1>
+                    <p>This is the second card</p>
+                    <a href="#" class="btn">Explore more</a>
+                </div>
+            </div>
+            
+        <div class="card">
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+                <div class="card-content">
+                    <h1>video 3</h1>
+                    <p>This is the third card</p>
+                    <a href="#" class="btn">Explore more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+                <div class="card-content">
+                    <h1>video 4</h1>
+                    <p>This is the first video</p>
+                    <a href="#" class="btn">Explore more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+                <div class="card-content">
+                    <h1>video 5</h1>
+                    <p>This is the second card</p>
+                    <a href="#" class="btn">Explore more</a>
+                </div>
+            </div>
+            
+        <div class="card">
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted loop></video>
+                <div class="card-content">
+                    <h1>video 6</h1>
+                    <p>This is the third card</p>
+                    <a href="#" class="btn">Explore more</a>
+                </div>
+            </div>
+    
+
+        
+
+    
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="real image">
+                <div class="card-content">
+                    <h1>card 1</h1>
+                    <p>This is the fourth card</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="real image">
+                <div class="card-content">
+                    <h1>card 2</h1>
+                    <p>This is the first card</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="real image">
+                <div class="card-content">
+                    <h1>card 3</h1>
+                    <p>This is the second card</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="real image">
+                <div class="card-content">
+                    <h1>card 4</h1>
+                    <p>This is the third card</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        
+
+    
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="real image">
+                <div class="card-content">
+                    <h1>card 5</h1>
+                    <p>This is the fourth card</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="real image">
+                <div class="card-content">
+                    <h1>card 6</h1>
+                    <p>This is the first card</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.....</p>
+        </div>
+
+            
+    </main>
+    <footer class="footer">
+        <div>
+            <h1> <u>For more information contact us on:</u></h1>
+                <div class="social-media">
+                    <a href="https://www.youtube.com/" title="Youtube" id="youtube" target="_blank" ><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.twitter.com" title="Twitter" id="twitter" target="blank" ><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/" title="Instagram" id="instagram" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+                    <a href="whatsapp://send?text=Hello%20there!"><i class="fa-brands fa-square-whatsapp"></i></a></p>
+                    <a href="https://www.facebook.com/myschoolwebs" title="Facebook" id="facebook" target="_blank" ><i class="fa-brands fa-square-facebook"></i></a><br><br><br><br>
+                    <p>&copy; 2025 E.S KAYUMBU. All rights reserved.</p><br>
+                </div>
+        </div>
+    </footer>
+
+</body>
+</html>
